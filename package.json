@@ -1,0 +1,17 @@
+{
+  "name": "vulnerable-app",
+  "version": "1.0.0",
+  "description": "Intentionally vulnerable application for security training",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "lodash": "4.17.15",
+    "axios": "0.21.0",
+    "minimist": "1.2.0",
+    "node-fetch": "2.6.0",
+    "express": "4.17.0"
+  }
+}
+
