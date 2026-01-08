@@ -2,7 +2,7 @@ name: Gitleaks Secret Scan
 
 on:
   push:
-    branches: [main, develop]
+    branches: [main, master, security-lab]
   pull_request:
     branches: [main]
   workflow_dispatch:
