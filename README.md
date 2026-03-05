@@ -25,33 +25,26 @@ Click the **Fork** button in the top-right corner to create your own copy.
 
 ### Step 2: Create a Working Branch
 
-After forking, create a new branch for your security lab work:
+After forking, download lab repository:
 
 ```bash
 git clone https://github.com/YOUR-USERNAME/Github-Actions-Lab.git
 cd Github-Actions-Lab
-git checkout -b security-lab
-git push -u origin security-lab
 ```
-
-**Why use a branch?**
-- Keeps the vulnerable baseline on `main` for reference
-- Allows you to create Pull Requests and see security scan comments
-- Simulates real-world development workflow
-- You can compare "before" and "after" states
 
 ### Step 3: Add Security Workflows
 
-On your `security-lab` branch, create workflows in `.github/workflows/`:
+Create workflows in `.github/workflows/`:
 
 1. **Gitleaks** - Detects hardcoded secrets
 2. **Trivy** - Scans dependencies, containers, and infrastructure code
 
-Follow the lab instructions to create and configure these workflows.
+Follow the lab instructions to create and configure these workflows:
+https://try-hard3r.gitbook.io/try-hard3r-blog/ctf-machines-and-labs-walkthrough/github-actions-security-scanning-walkthrough#step-7-exercise-4---infrastructure-as-code-scanning
 
 ### Step 4: Create a Pull Request
 
-After adding workflows, create a PR from `security-lab` to `main` to see:
+After adding workflows, create a PR to `main` to see:
 - Security scan results as PR comments
 - Status checks blocking merge
 - Detailed findings in the Security tab
